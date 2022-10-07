@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkalami&family=Inconsolata:wght@200&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inconsolata', monospace;
+    list-style: none; 
+}
+
+body{
+    background: #f3f5f9;
+}
+.wrapper{
+    display: flex;
+    position: relative;
+}
+
+.wrapper .sidebar{
+    position: fixed;
+    width: 15%;
+    height: 100%;
+    background: #9d94ce;
+}
+
+.wrapper .sidebar h2{
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.wrapper .sidebar ul li{
+    padding: 25px;
+    border-bottom: 2px solid rgba(255, 250, 250, 0);
+    border-top: 2px solid rgba(225,225,225,0);
+    text-align: center;
+}
+
+.wrapper .sidebar ul li:hover{
+    border-bottom: 2px solid rgba(255, 250, 250, 0.5);
+    border-top: 2px solid rgba(225,225,225,0.5);
+    cursor: pointer;
+    background: #594f8d
+}
+
+
+.wrapper .sidebar ul li a{
+    color: #faf9ff;
+    display: block;
+}
+
+.wrapper .sidebar .socials{
+    position: absolute;
+    bottom: 50px;
+    transform: translateX(-40%);
+    display: flex;
+    left: 45%;
+}
+
+.wrapper .sidebar .socials i sa{
+    display: block;
+    width: 10%;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    margin: 0 5px;
+    color: #bdb8d7;
+    border-top-right-radius:  5px;
+    border-top-left-radius: 5px;
+}
+
+.wrapper .sidebar .socials a:hover{
+    background: #faf9ff;
+    border-bottom: 2px solid rgba(255, 250, 250, 0.5);
+    border-top: 2px solid rgba(225,225,225,0.5);
+    cursor: pointer;
+}
+
+.wrapper .main-content{
+    width: 100%;
+    margin-left: 15%;
+    padding: 20px;
+}
+
+.wrapper .main-content .header{
+    padding: 20px;
+    background: #fff;
+    color: #717171;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    border-bottom: 1px solid #e0e4e8;
+}
+
+.wrapper .main-content .content{
+    min-height: 100vh;
+    padding: 20px;
+    border-top: 1px solid #e0e4e8;
+    border-bottom: 1px solid #e0e4e8;
+}
